@@ -2,8 +2,7 @@ from json import load
 from os import access, R_OK
 from sys import modules
 
-def parse(files):
-    with open(next(f for f in files if access(f, R_OK))) as c:
-        return load(c)
+def parse(file):
+    return load(open(file)) if access(file, R_OK) else {}
 
-modules[__name__] = parse(['../config.json'])
+modules[__name__] = parse('../config.json')
