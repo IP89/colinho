@@ -1,0 +1,5 @@
+{
+    "page": "http://uk.soccerway.com/",
+    "stats": "http://uk.soccerway.com/charts/statsplus/",
+    "games_selector": "//tr[contains(@class, 'match no-date-repetition')]"
+}
